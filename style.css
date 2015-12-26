@@ -1,0 +1,560 @@
+/*
+Theme Name:jvm themes
+Theme URI: http://themejvmr.com/
+Author: Themejvmr
+Author URI: http://themejvmr.com/
+Description: The jvm theme is a simple, minimalist theme based on Underscores and the original jvm Theme by Ian Stewart. It was created especially as a learning theme for The Theme jvmr WordPress Theme Tutorial: 2nd Edition.
+Version: 0.1
+License: GNU General Public License
+License URI: license.txt
+Tags: brown, green, light, tan, one-column, two-columns, left-sidebar, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, featured-images, flexible-header, microformats, post-formats, rtl-language-support, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+/*Rebulid default browser styles*/
+@import url('css/bootstrap.min.css');
+/* Rebuild default browser styles */
+@import url('css/bootstrap-theme.min.css');
+/* Import a basic layout */
+@import url('css/jquery-ui.css');
+/* Import rating style */
+@import url('css/star-rating.css');
+@import url('css/star-rating.min.css');
+@import url('font-awesome/css/font-awesome.css');
+
+/*slider */
+@import url('css/flexslider.css');
+
+.nav-pills li a{
+	border-radius:0px;
+	color:#000;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: 'Muli', sans-serif;
+  
+}
+#widget-li{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width:1250px;
+  padding: 0 15px;
+  background-color:#fff;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.list-inline{
+	background-color:#fff;
+	border:2px dashed #E4F1FE;
+	max-width:100%;
+	padding:5px;
+}
+
+
+/*-------------------------------------------------navbar mini---------------------------------------------------------------*/
+.wrapper {
+	
+	width:100%;
+    margin:0 auto;
+}
+
+.nav-xs {
+	
+    list-style:none;
+  	padding-left: 0;
+    background-color:#eee;
+    float: left;
+}
+
+.nav-xs>li {
+	
+	float: left;
+    position: relative;
+	display: block;
+    white-space: nowrap;
+}
+  
+.nav-xs>li>a, .nav-xs .dropdown-menu>li>a {
+
+    display: block;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.nav-xs .dropdown-menu {
+	min-width: 120px;
+}
+
+.nav-xs>li>a:hover {
+    background-color:#e0e0e0;
+}
+
+/* navbar */
+.navbar-primary .navbar { 
+	background:#22A7F0; border-bottom:none; 
+}
+.navbar-primary .navbar .nav > li > a {
+	color: #2C3E50;
+}
+.navbar-primary .navbar .nav > li > a {
+	color: #2C3E50;
+}
+.navbar-primary .navbar .nav > li > a:hover {
+	color: #fff; 
+	background-color: #3498DB;
+}
+.navbar-primary .navbar .nav .active > a,.navbar .nav .active > a:hover {
+	color:#000;
+	background-color: #F5AB35;
+}
+.navbar-primary .navbar .nav li > a .caret, .tnav .navbar .nav li > a:hover .caret {
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+}
+.navbar-primary .navbar .nav > li.dropdown.open.active > a:hover,
+.navbar-primary .navbar .nav > li.dropdown.open > a {
+	color: #fff;
+	background-color:#3498DB;
+	border-color: #fff;
+}
+.navbar-primary .navbar .nav > li.dropdown.open.active > a:hover .caret, .tnav .navbar    .nav > li.dropdown.open > a .caret {
+border-top-color: #fff;
+}
+.navbar-primary .navbar .navbar-brand {
+	color:#fff;
+}
+.navbar-primary .navbar .nav.pull-right {
+	margin-left: 10px;
+	margin-right: 0;
+}
+.navbar-xs .navbar-primary .navbar { 
+	min-height:28px;
+} 
+.navbar-xs .navbar-primary .navbar .navbar-brand{ 
+	padding: 8px 8px;
+	font-size:16px;
+	line-height: 18px;
+} 
+.navbar-xs .navbar-primary .navbar .navbar-nav > li > a {  
+	padding-top: 7px;
+	padding-bottom:7px;
+	line-height:20px;
+} 
+.navbar-sm .navbar-primary .navbar { 
+	min-height:40px;
+} 
+.navbar-sm .navbar-primary .navbar .navbar-brand{ 
+	padding: 12px 12px;
+	font-size: 16px;
+	line-height: 18px;
+} 
+.navbar-sm .navbar-primary .navbar .navbar-nav > li > a {  
+	padding-top: 12px; 
+	padding-bottom:12px; 
+	line-height:20px;
+}
+.wrapper {
+	width:100%;
+    margin:0 auto;	
+}
+.thumbnail{
+	max-height:339px;
+}
+.thumbnail>img{
+	width: 180px;
+	height:200px;
+}
+.entry-content{
+	margin-top:-25px;
+}
+
+/*-----------------------------------------------------------------sidebar-contact------------------------------------------------------------------------------*/
+
+#sidebar-wrapper {
+	top:30px;
+    margin-right: -250px;
+    right: 0;
+    width: 250px;
+    /*background: rgb(0,0,0);*/
+	background-color:#4183D7;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.5s ease-in 0s;
+    -webkit-transition: all 0.5s ease-in 0s;
+    -moz-transition: all 0.5s ease-in 0s;
+    -ms-transition: all 0.5s ease-in 0s;
+    -o-transition: all 0.5s ease-in 0s;
+  }
+
+  .sidebar-nav {
+	
+    position: absolute;
+    top: 0;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar-nav li {
+    line-height: 50px;
+    text-indent: 20px;
+  }
+
+  .sidebar-nav li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+  }
+
+  .sidebar-nav li a:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+    text-decoration: none;
+  }
+
+  .sidebar-nav li a:active, .sidebar-nav li a:focus {
+    text-decoration: none;
+  }
+
+  .sidebar-nav > .sidebar-brand {
+    height: 55px;
+    line-height: 55px;
+    font-size: 18px;
+  }
+
+  .sidebar-nav > .sidebar-brand a {
+    color: #fff;
+  }
+
+  .sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+  }
+
+  #menu-toggle {
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+  }
+
+  #sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    transition: all 0.5s ease-out 0s;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+  }
+
+  .toggle {
+    margin: 25px 25px 0 0;
+  }
+
+  
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+.sidebar-nav > .sidebar-brand a{
+	cursor:default;
+}
+.sidebar-nav li a{
+	padding:5px;
+	/*cursor:default;*/
+}
+.sidebar-nav li a img{
+	max-width:100% !important;
+    height:auto;
+    display:block;
+	float:left;
+}
+
+.white, .white a {
+  color: #fff;
+}
+
+
+/*table*/
+.table-nonfluid {
+   width: auto;
+   overflow:scroll;
+}
+.pager .next>a, .pager .next>span{
+	border-radius:0px;
+}
+.pager .previous>a, .pager .previous>span{
+	border-radius:0px;
+}
+.pager{
+	background-color:#2574A9;
+	border:1px solid #2574A9;
+}
+.panel-default >.panel-heading{
+	color:#fff;
+	background-color:#4183D7;
+	border-color:#4183D7;
+}
+.panel-title>a:hover{
+	color:#2C3E50;
+	text-decoration:none;
+}
+
+
+/*------------------------------------------------------------------------Styles the lightbox, removes it from sight and adds the fade-in transition-----------------------------------------------------------------------*/
+
+.lightbox-target {
+position: fixed;
+z-index:auto;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target .img-lightbox-target img{
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: black;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top:100px;
+}
+.lightbox-isi{
+	max-width:1000px;
+	margin:0 auto;
+	padding:50px 0px 0px 0px;
+}/
+.carousel-caption /{
+	z-index:auto;
+}
+/* calendar widget */
+.widget_calendar {float: left;}
+#wp-calendar {
+margin:0 auto;
+width:100%;
+max-width:315px;
+}
+#wp-calendar caption { text-align: right; color: #333; font-size: 12px; margin-top: 10px; margin-bottom: 15px; }
+#wp-calendar thead { font-size: 10px; }
+#wp-calendar thead th { padding-bottom: 10px; }
+#wp-calendar tbody { color: #aaa; }
+#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #fff; text-align: center; padding:8px;}
+#wp-calendar tbody td:hover { background: #fff; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
+#wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+
+.btn-warning{
+	border-radius:0px;
+	margin-bottom:5px;
+}
+
+.form-submit {
+    display: none;
+}
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+    width: 50%;
+}
+
+/*-------------------------------REVIEW PRODUK----------------------------------------------------------------------*/
+ .animated {
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    transition: height 0.2s;
+}
+.stars
+{
+    margin: 20px 0;
+    font-size: 24px;
+    color: #d17581;
+}
+
+/*--------------------------------------------PAGE USER PROFILE-------------------------------------------------------------*/
+
+.pic
+{
+     margin-top:50px; 
+     width:120px;
+     margin-left:50px;
+     margin-bottom:-60px;
+}
+
+.name
+{
+    position:absolute;
+    padding-left:200px;
+    font-size:30px;
+}
+
+.dropdown
+{
+    position:absolute;
+}
+
+.change
+{
+ position:relative; 
+ bottom:20px;
+ padding:1px;
+ color:white;
+ text-decoration:none;
+}
+
+
+.change:hover
+{
+ text-decoration:none;
+ background-color:black;
+ color:white;
+}
+.form-control{
+	border-radius:0px;
+}
+.btn-sm, .btn-xs{
+	border-radius:0px;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+.media, .media-body {
+	overflow:auto;
+}
+

@@ -1,0 +1,25 @@
+ foreach($cekpenwrn as $key => $value){
+                            $kdbrgarr[]=$value->kd_prod;
+                        }
+                        if(in_array($_POST['kdprod'],$kdbrgarr)){
+                          $nemu=array_search($_POST['kdprod'],$kdbrgarr);
+                          $brg=get_post($kdbrgarr[$nemu]);
+                          echo "<div class='alert alert-warning' role='alert'>anda sebelumnya sudah membuat penawaran produk <strong>".$brg->post_title."</strong></div>";
+                        }else{
+                              $wewid="THC/QUO/".$dateq."-".$_POST['userid'];
+                              $wpdb->insert(
+                              $t5,
+                              array(
+                                  'id'=>$wewid,
+                                  'nama'=>$_POST['nm'],
+                                  'email'=>$_POST['email'],
+                                  'nohp'=>$_POST['nohp'],
+                                  'alamatpr'=>$_POST['almt'],
+                                  'tgl'=>date('Y-n-j-h:i:s'),
+                                  'ketopt' =>$_POST['ket'],
+                                  'kd_prod' =>$_POST['kdprod'],
+                                  'harga' =>$_POST['hrg'],
+                                  'qty' =>$_POST['qty'],
+                                  'status'=>'0'), 
+                                  array( '%s','%s','%s','%s','%s','%s','%s','%d','%d','%s') 
+                          );
